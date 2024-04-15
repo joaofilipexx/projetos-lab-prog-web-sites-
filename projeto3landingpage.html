@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café & Conforto - Cafeteria Local</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f1e7;
+            color: #333;
+        }
+        .header {
+            background-color: #5c3c16;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+            position: relative;
+        }
+        .header:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/1500x500');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .tagline {
+            font-size: 24px;
+            font-style: italic;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .menu {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .image-section {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .image-section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+        .image-section img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .contact-section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-section h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .contact-section p {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .contact-section a {
+            color: #5c3c16;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            .tagline {
+                font-size: 20px;
+            }
+            .menu h2 {
+                font-size: 24px;
+            }
+            .menu li {
+                font-size: 16px;
+            }
+            .contact-section h2 {
+                font-size: 24px;
+            }
+            .contact-section p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Café & Conforto</h1>
+        <p class="tagline">O melhor café da cidade</p>
+    </div>
+
+    <div class="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li>Café Espresso</li>
+            <li>Cappuccino</li>
+            <li>Latte</li>
+            <li>Pão de Queijo</li>
+            <li>Bolo de Chocolate</li>
+        </ul>
+    </div>
+
+    <div class="image-section">
+        <img src="https://via.placeholder.com/600" alt="Pessoas lendo na cafeteria">
+    </div>
+
+    <div class="contact-section">
+        <h2>Localização</h2>
+        <p>Visite-nos em:</p>
+        <p>Rua dos Cafés, 123 - Centro</p>
+        <p>Telefone: (XX) XXXX-XXXX</p>
+        <p><a href="#">Ver no Mapa</a></p>
+    </div>
+</body>
+</html>
