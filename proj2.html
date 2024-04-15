@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Conhecimentos Gerais</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+        }
+        .options button:hover {
+            background-color: #2980b9;
+        }
+        #result {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz de Conhecimentos Gerais</h1>
+        <div class="question" id="question1">
+            <p>Qual é a capital do Brasil?</p>
+            <div class="options">
+                <button onclick="checkAnswer('Brasília')">Brasília</button>
+                <button onclick="checkAnswer('Rio de Janeiro')">Rio de Janeiro</button>
+                <button onclick="checkAnswer('São Paulo')">São Paulo</button>
+                <button onclick="checkAnswer('Belo Horizonte')">Belo Horizonte</button>
+            </div>
+        </div>
+        <div class="question" id="question2">
+            <p>Quantos planetas existem no sistema solar?</p>
+            <div class="options">
+                <button onclick="checkAnswer('8')">8</button>
+                <button onclick="checkAnswer('9')">9</button>
+                <button onclick="checkAnswer('10')">10</button>
+                <button onclick="checkAnswer('7')">7</button>
+            </div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        let score = 0;
+
+        function checkAnswer(correctAnswer) {
+            let selectedAnswer = event.target.textContent;
+            if (selectedAnswer === correctAnswer) {
+                score++;
+                document.getElementById("result").innerHTML = "Resposta correta! Sua pontuação é: " + score;
+            } else {
+                document.getElementById("result").innerHTML = "Resposta incorreta! Sua pontuação é: " + score;
+            }
+            event.target.disabled = true; // Disable the button after selection
+        }
+    </script>
+</body>
+</html>
